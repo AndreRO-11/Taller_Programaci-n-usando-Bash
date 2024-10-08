@@ -7,6 +7,14 @@ if [ $# -eq 0 ]; then
 else
     if [ -f "$1" ]; then
         echo "Archivo encontrado"
+    elif [ -f "$2" ]; then
+        echo "Archivo encontrado"
+    elif [ -f "$3" ]; then
+        echo "Archivo encontrado"
+    elif [ -f "$4" ]; then
+        echo "Archivo encontrado"
+    elif [ -f "$5" ]; then
+        echo "Archivo encontrado"
     else
         echo "Archivo no encontrado"
     fi
