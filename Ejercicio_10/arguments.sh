@@ -2,11 +2,12 @@
 
 # Ejercicio 10: Argumentos y parámetros
 
-echo "Nombre del archivo:"
-read param
-
-if [ -z $param ]; then
-    echo "Archivo no encontrado"
+if [ $# -eq 0 ]; then
+    echo "No se ingresaron parámetros"
 else
-    echo "Archivo encontrado"
+    if [ -f "$1" ]; then
+        echo "Archivo encontrado"
+    else
+        echo "Archivo no encontrado"
+    fi
 fi
